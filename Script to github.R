@@ -512,7 +512,7 @@ cds_obj <- reduceDimension(cds_obj, max_components = 2,
                            method = 'DDRTree')
 cds_obj <- orderCells(cds_obj)
 
-saveRDS(cds_obj,paste0(monocle_dir,"Epithelial_monocle.rds"))
+saveRDS(cds_obj,paste0(monocle_dir,"SC_monocle.rds"))
 
 
 p=plot_cell_trajectory(cds_obj,color_by="Pseudotime")+
